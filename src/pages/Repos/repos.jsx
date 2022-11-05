@@ -20,7 +20,7 @@ const Repos = () => {
   useEffect(() => {
     const getRepos = async () => {
       setLoading(true);
-      const res = await axios.get(`api.github.com/users/bigmike12/repos`, {
+      const res = await axios.get(`https://api.github.com/users/bigmike12/repos`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
