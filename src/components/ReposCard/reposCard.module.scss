@@ -1,0 +1,33 @@
+.card {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  background-color: #ffc727;
+  margin-bottom: 12px;
+  transition: transform 0.5s;
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      width: 400px;
+    }
+  }
+
+  &__link {
+    background-color: #ffc727;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.3);
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.3);
+  }
+}
