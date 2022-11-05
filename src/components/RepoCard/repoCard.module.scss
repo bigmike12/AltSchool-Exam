@@ -1,0 +1,36 @@
+.card {
+  padding: 10px;
+  background-color: #ffc727;
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.3);
+
+  p {
+    margin: 20px 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    background-color: #ffc727;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.3);
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+    width: fit-content;
+    transition: transform 0.5s;
+
+    p {
+      margin: 0;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 1px 5px rgb(0 0 0 / 0.3);
+    }
+  }
+}
