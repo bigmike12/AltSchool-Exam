@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import styles from "./errorBoundary.module.scss"
-
+import styles from "./errorBoundary.module.scss";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -18,8 +16,9 @@ class ErrorBoundary extends Component {
       return (
         <div className={styles.error}>
           <img src="/No-data.png" alt="404 page not found" />
+          OOPS! Something Went Wrong...
           <div className={styles.error__button}>
-            <Link to={`/`}> Go Back Home </Link>
+            <a href={`/`}> Go Back Home </a>
           </div>
         </div>
       );
