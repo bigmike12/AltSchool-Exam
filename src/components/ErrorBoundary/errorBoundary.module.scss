@@ -1,0 +1,34 @@
+.error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    &__button {
+      background-color: #ffc727;
+      padding: 12px;
+      border-radius: 10px;
+      transition: transform 0.5s;
+  
+      a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+      }
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 0.3);
+  
+        a {
+          color: #000;
+        }
+      }
+    }
+  
+    img {
+      width: 500px;
+    }
+  }
+  
